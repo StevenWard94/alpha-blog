@@ -28,3 +28,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Override ~/.gitignore to include 'bin/' for heroku to use
+!**/bin
