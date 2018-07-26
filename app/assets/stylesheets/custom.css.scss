@@ -25,6 +25,10 @@ $navbar-default-bg: black;
     }
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu {
+    color: black;
+}
+
 .center {
     text-align: center;
 }
