@@ -7,6 +7,7 @@ ruby '2.5.0'
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 
+# Enable simple pagination
 gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 # Use Puma as the app server
@@ -30,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+# Enable use of 'assigns' & 'assert_template' (removed in Rails 5) for testing
+gem 'rails-controller-testing'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
