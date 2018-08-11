@@ -24,12 +24,9 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "New Article", new_article_path %></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><%= link_to "View My Profile & Articles", user_path(current_user) %></li>
+              <li><%= link_to "Edit My Account", edit_user_path(current_user) %></li>
             </ul>
           </li>
         <% end %>
@@ -64,11 +61,8 @@
               Your Profile <%= "Admin" if current_user.admin? %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
               <li><%= link_to "View Profile", user_path(current_user) %></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><%= link_to "Edit Account", edit_user_path(current_user) %></li>
             </ul>
           </li>
         <% else %>
