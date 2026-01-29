@@ -65,7 +65,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :production do
-  # Use PostgreSQL as the database for Active Record when app is deployed to hosting
-  gem 'pg'
-end
+# Use PostgreSQL as the database for Active Record when app is deployed to hosting
+gem 'pg'
