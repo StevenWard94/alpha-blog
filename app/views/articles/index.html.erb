@@ -1,0 +1,20 @@
+<h1>Articles Listing</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles_list.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+      <td><%= article.title %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
