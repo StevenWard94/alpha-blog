@@ -46,7 +46,7 @@ group :development, :test do
   #gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[ mri windows ]
 
   # Audits gems for known security defects (use config/bundler-audit.yml to ignore issues)
   gem "bundler-audit", require: false
